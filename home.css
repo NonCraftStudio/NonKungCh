@@ -7,34 +7,34 @@ body {
 
 header {
     background-color: #9DF1FF;
-    color: back;
+    color: white; /* แก้ไขเป็น white หรือสีที่เหมาะสมกับข้อความ */
     text-align: center;
     border-radius: 5px;
-    padding: 0px 10;
+    padding: 10px 0; /* ปรับ padding เป็น 10px 0 */
 }
 
 nav {
     background-color: #9DF1FF;
-    color: back;
-    text-align: center 1px;
+    color: white; /* แก้ไขเป็น white หรือสีที่เหมาะสมกับข้อความ */
+    text-align: center;
     border-radius: 12px;
-    padding: 0px 10;
+    padding: 10px 0; /* ปรับ padding เป็น 10px 0 */
 }
 
 nav ul {
     list-style-type: none;
-    margin: -27px;
-    padding: 1px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* แก้ไขเป็น inline-block */
     margin-right: 1em;
 }
 
 nav ul li a {
-    color: back;
+    color: white; /* แก้ไขเป็น white หรือสีที่เหมาะสมกับข้อความ */
     text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ main {
 
 main section {
     margin-bottom: 2em;
-    padding: 0px 8;
+    padding: 8px; /* ปรับ padding เป็น 8px */
     border-radius: 12px;
 }
 
@@ -69,22 +69,23 @@ main section {
 
 .updates-container {
     display: flex;
-    overflow-x: scroll; /* ทำให้สามารถเลื่อนในแนวนอน */
+    overflow-x: auto; /* แก้เป็น auto สำหรับการเลื่อนในแนวนอน */
     gap: 3em;
 }
 
 .update {
-    flex: 0 0 auto; /* ไม่ให้ขยายหรือหดตัว */
-    width: 300px; /* ความกว้างของบล็อกแต่ละบล็อก */
-    border: 1px solid ;
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd; /* แก้ไขเป็นสีเทาเพื่อแยกแต่ละบล็อก */
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
+    margin-right: 1em; /* เพิ่ม margin-right สำหรับการแยกบล็อก */
 }
 
 .update img {
     width: 100%;
-    height: 200px; /* กำหนดความสูงให้รูปภาพ */
+    height: 200px;
     object-fit: cover;
 }
 
@@ -118,7 +119,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     position: fixed;
-    width: 0%;
+    width: 100%; /* แก้เป็น 100% */
     bottom: 0;
 }
 
@@ -131,7 +132,7 @@ footer {
 #search-input {
     padding: 1em;
     margin-right: 1em;
-    width: 100px;
+    width: 200px; /* ปรับเป็นขนาดที่เหมาะสม */
 }
 
 #search-button {
@@ -161,11 +162,4 @@ footer {
     #search-button {
         width: 100%;
     }
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 0em 0;
 }
