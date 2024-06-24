@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* สีพื้นหลังของเว็บไซต์ */
+}
+
+header {
+    background-color: #9DF1FF;
+    color: back;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 10;
+}
+
+nav {
+    background-color: #9DF1FF;
+    color: back;
+    text-align: center 1px;
+    border-radius: 12px;
+    padding: 0px 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: -27px;
+    padding: 1px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: back;
+    text-decoration: none;
+}
+
+main {
+    padding: 3em;
+}
+
+#home {
+    background-color: #e0f7fa;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+#search {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#search-box {
+    display: inline-block;
+}
+
+#search-input {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    width: 200px;
+}
+
+#search-button {
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.addons-container {
+    display: flex;
+    gap: 1em;
+    overflow-x: scroll;
+}
+
+.addon {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.addon img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.addon-content {
+    padding: 1em;
+}
+
+.tags {
+    margin-top: 0.5em;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 12px;
+    margin-right: 0.5em;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tag:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0em 0;
+}
