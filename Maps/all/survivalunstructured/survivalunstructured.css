@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: ##D5FDFF;
+    color: blck;
+    text-align: center;
+    padding: 1px 0.5;
+}
+
+nav {
+    background-color: #9DF1FF;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.update {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.update img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.update p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0px; /* กำหนดระยะห่างด้านบนเป็น 10px */
+    left: 0;
+    width: 100%; /* ทำให้ครอบคลุมความกว้างของ parent */
+    height: 100%; /* ทำให้ครอบคลุมความสูงของ parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลัง semi-transparent */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.text-overlay p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
