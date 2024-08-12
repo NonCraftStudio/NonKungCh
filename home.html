@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NonKungCh</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="icons/non0.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Home</a>
+        <a href="Addons/addons.html" id="Addon">ADDONS</a>
+        <a href="Maps/maps.html" id="maps">MAPS</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- ปุ่มเปิด Sidebar -->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+    </div>
+
+    <header>
+        <h1>HOME</h1>
+    </header>
+
+    <main>
+        <section id="home">
+        </section>
+        
+        <div class="update" data-tags="performance bugs" data-name="Update 1.19">
+            <img src="icons/miniko.jpg" alt="EmoteCraft">
+            <div class="update-content">
+                <h4>MiNiKo Ui</h4>
+                <p>
+                    Survival Unstructured is a survival map with absolutely no structures.
+                    It was initially generated in Minecraft Java but has been adapted for Minecraft PE.
+                </p>
+                <a href="Maps/all/survivalunstructured/survivalunstructured.html" class="view-button">View</a>
+            </div>
+        </div>
+
+        <!-- ส่วนเนื้อหาที่เหลือ -->
+    </main>
+    <footer>
+        <p>&copy; 2024 NonKunCh</p>
+    </footer>
+
+    <script src="home.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>
