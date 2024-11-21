@@ -118,7 +118,7 @@ main section {
 
 .update img {
     width: 50%;
-    height: 50px;
+    height: 100px;
     object-fit: cover;
 }
 
