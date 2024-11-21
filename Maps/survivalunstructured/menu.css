@@ -1,17 +1,20 @@
+/* การตั้งค่าพื้นฐาน */
 body {
-    font-family: 'Press Start 2P'
+    font-family: 'Press Start 2P', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1c1c1c;
 }
 
+/* ส่วน Header */
 header {
     background-color: #4CAF50;
     color: #fff;
     text-align: center;
-    padding: 0 0;
+    padding: 1em 0;
 }
 
+/* ส่วน Navigation */
 nav {
     background-color: #333;
     color: white;
@@ -23,8 +26,7 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
-    text-align: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -45,10 +47,11 @@ nav ul li a:hover {
     color: #fff;
 }
 
+/* การ์ด Update */
 .update {
     margin: 20px auto;
-    padding: 20px auto;
-    max-width: 600px auto;
+    padding: 20px;
+    max-width: 600px;
     background-color: #2b2b2b;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,20 +59,26 @@ nav ul li a:hover {
     border: 2px solid #fff;
 }
 
+/* รูปใน Update */
 .update img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    display: block;
+    max-width: 100%; /* รูปไม่ใหญ่เกินกรอบ */
+    height: auto; /* ปรับความสูงตามสัดส่วน */
+    object-fit: cover; /* ตัดส่วนเกินออก */
+    border-radius: 10px; /* ขอบมุมรูปให้กลม */
+    margin: 0 auto; /* รูปอยู่ตรงกลาง */
 }
 
+/* เนื้อหาใน Update */
 .update p {
     margin-top: 20px;
     font-size: 1rem;
     color: #ddd;
     line-height: 1.5;
+    text-align: center;
 }
 
+/* ส่วนหลัก */
 main {
     padding: 2em;
 }
@@ -95,15 +104,17 @@ main section {
     overflow: hidden;
 }
 
+/* หัวข้อใน Updates */
 #latest-updates h3 {
     margin-top: 0;
     color: #fff;
 }
 
+/* Container Updates */
 .updates-container {
     display: flex;
     overflow-x: auto;
-    gap: 3em;
+    gap: 1.5em;
 }
 
 .update {
@@ -116,19 +127,21 @@ main section {
     margin-right: 1em;
 }
 
+/* รูปภาพใน Updates */
 .update img {
-    width: 50% auto;
-    height: 100px auto;
-    object-fit: cover;
+    width: 100%; /* เต็มกรอบ */
+    height: 200px; /* ความสูงคงที่ */
+    object-fit: cover; /* รูปไม่บิดเบี้ยว */
 }
 
+/* เนื้อหาในการ์ด */
 .update-content {
     padding: 1em;
     color: #fff;
+    text-align: center;
 }
 
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -136,9 +149,11 @@ footer {
     padding: 1em 0;
 }
 
+/* Responsive Design */
 @media (max-width: 1200px) {
     .update {
         width: 90%;
+        margin: 10px auto; /* อยู่ตรงกลาง */
     }
 }
 
@@ -161,7 +176,7 @@ footer {
     background-color: #00387C;
 }
 
-/* สไตล์สำหรับ Sidebar */
+/* Sidebar */
 .sidebar {
     height: 100%;
     width: 0;
@@ -199,18 +214,4 @@ footer {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-}
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-/* การปรับเนื้อหาเมื่อ Sidebar เปิด */
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
+  
